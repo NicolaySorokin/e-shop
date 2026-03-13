@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            cd /opt/e-shop
+            cd /opt/e-shop/e-shop
             git pull origin master
             docker compose -f docker-compose.prod.yml up --build -d
